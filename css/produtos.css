@@ -1,0 +1,81 @@
+/* Título */
+
+.titulo-pagina{
+
+    text-align: center;
+
+    margin: 50px 0;
+
+}
+
+.titulo-pagina p{
+
+    margin-top: 10px;
+
+    color: #555;
+
+}
+
+/* Grid */
+
+.produtos-grid{
+
+    width: 90%;
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4,1fr);
+
+    gap: 25px;
+
+}
+
+/* Card */
+
+.produto{
+
+    background: white;
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+
+    transition: .3s;
+
+}
+
+.produto:hover{
+
+    transform: translateY(-5px);
+
+}
+
+.produto img{
+
+    width: 100%;
+
+    border-radius: 10px;
+
+}
+
+.produto h3{
+
+    margin: 15px 0 10px;
+
+}
+
+.produto p{
+
+    color: var(--verde);
+
+    font-weight: bold;
+
+}

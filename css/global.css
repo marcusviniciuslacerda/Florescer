@@ -1,0 +1,171 @@
+/* ===================================
+   RESET
+=================================== */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===================================
+   CORES
+=================================== */
+
+:root{
+    --verde: #4F6F52;
+    --verde-claro: #A9C46C;
+    --rosa: #F8BBD0;
+    --bege: #FFF8F2;
+    --branco: #FFFFFF;
+    --cinza: #666;
+    --preto: #222;
+}
+
+/* ===================================
+   GERAL
+=================================== */
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bege);
+    color: var(--preto);
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+/* ===================================
+   TÍTULOS
+=================================== */
+
+h1,
+h2,
+h3{
+    font-family: 'Playfair Display', serif;
+    color: var(--verde);
+}
+
+section{
+    padding: 70px 0;
+}
+
+/* ===================================
+   HEADER
+=================================== */
+
+header{
+    background: var(--branco);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo img{
+    width: 55px;
+}
+
+.logo h1{
+    font-size: 2rem;
+}
+
+/* ===================================
+   MENU
+=================================== */
+
+nav ul{
+    display: flex;
+    gap: 30px;
+}
+
+nav a{
+    color: var(--verde);
+    font-weight: 500;
+    transition: 0.3s;
+    padding-bottom: 5px;
+}
+
+nav a:hover,
+nav a.ativo{
+    border-bottom: 2px solid var(--verde);
+}
+
+/* ===================================
+   BOTÕES
+=================================== */
+
+.btn{
+    display: inline-block;
+    background: var(--verde);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 30px;
+    transition: 0.3s;
+    margin-top: 15px;
+}
+
+.btn:hover{
+    background: var(--verde-claro);
+}
+
+.btn-card{
+    display: inline-block;
+    margin-top: 15px;
+    color: var(--verde);
+    font-weight: 600;
+}
+
+/* ===================================
+   FOOTER
+=================================== */
+
+footer{
+    background: var(--verde);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+footer h3{
+    color: white;
+    margin-bottom: 15px;
+}
+
+footer p{
+    margin: 8px 0;
+}
+
+.copyright{
+    margin-top: 20px;
+    font-size: 14px;
+}
