@@ -1,0 +1,125 @@
+/* ===================================
+   HERO
+=================================== */
+
+.hero-encomendas{
+    background-color: #fdf4f4;
+    padding: 60px 0;
+}
+
+.hero-conteudo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-conteudo div{
+    width: 50%;
+}
+
+.hero-conteudo img{
+    width: 40%;
+    border-radius: 15px;
+}
+
+.hero-conteudo h2{
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.hero-conteudo p{
+    color: var(--cinza);
+    line-height: 1.6;
+}
+
+/* ===================================
+   FORMULÁRIO
+=================================== */
+
+.formulario{
+    padding: 70px 0;
+}
+
+.formulario-grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+}
+
+.form-box,
+.info{
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,.08);
+}
+
+.form-box h2,
+.info h2{
+    margin-bottom: 25px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    margin-top: 15px;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+input,
+select,
+textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+textarea{
+    resize: vertical;
+}
+
+.radio{
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.radio label{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.check{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.check input{
+    width: auto;
+}
+
+button{
+    border: none;
+    cursor: pointer;
+}
+
+.info p{
+    margin: 12px 0;
+    color: var(--cinza);
+}
+
+.info hr{
+    margin: 25px 0;
+}

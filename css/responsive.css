@@ -1,0 +1,68 @@
+/* ==============================
+   TABLETS
+================================ */
+
+@media (max-width: 992px){
+
+    .banner-conteudo,
+    .hero-conteudo,
+    .sobre-conteudo,
+    .formulario-grid{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .banner-texto,
+    .banner-imagem,
+    .hero-conteudo div,
+    .hero-conteudo img,
+    .sobre-texto,
+    .sobre-imagem{
+        width: 100%;
+    }
+
+    .cards,
+    .grid-produtos,
+    .beneficios-grid,
+    .galeria-grid,
+    .categorias-grid,
+    .mvv-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+/* ==============================
+   CELULARES
+================================ */
+
+@media (max-width: 768px){
+
+    header .container{
+        flex-direction: column;
+    }
+
+    nav ul{
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .cards,
+    .grid-produtos,
+    .beneficios-grid,
+    .galeria-grid,
+    .categorias-grid,
+    .mvv-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .banner-texto h2,
+    .hero-conteudo h2{
+        font-size: 32px;
+    }
+
+    section{
+        padding: 50px 0;
+    }
+}
