@@ -1,15 +1,21 @@
-/* ==============================
+/* ===========================
    TABLETS
-================================ */
+=========================== */
 
 @media (max-width: 992px){
+
+    .container{
+        width: 90%;
+    }
 
     .banner-conteudo,
     .hero-conteudo,
     .sobre-conteudo,
     .formulario-grid{
-        display: flex;
-        flex-direction: column;
+
+        display:flex;
+        flex-direction:column;
+        text-align:center;
     }
 
     .banner-texto,
@@ -18,7 +24,17 @@
     .hero-conteudo img,
     .sobre-texto,
     .sobre-imagem{
-        width: 100%;
+
+        width:100%;
+    }
+
+    .hero-conteudo img,
+    .banner-imagem img,
+    .sobre-imagem img{
+
+        max-width:450px;
+        margin:auto;
+        display:block;
     }
 
     .cards,
@@ -27,42 +43,120 @@
     .galeria-grid,
     .categorias-grid,
     .mvv-grid{
-        grid-template-columns: repeat(2,1fr);
+
+        grid-template-columns:repeat(2,1fr);
     }
+
 }
 
-/* ==============================
-   CELULARES
-================================ */
 
-@media (max-width: 768px){
+/* ===========================
+   CELULAR
+=========================== */
+
+@media(max-width:768px){
 
     header .container{
-        flex-direction: column;
+
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .logo{
+
+        margin-bottom:20px;
     }
 
     nav ul{
-        flex-direction: column;
-        text-align: center;
-        gap: 15px;
-        margin-top: 20px;
-    }
 
-    .cards,
-    .grid-produtos,
-    .beneficios-grid,
-    .galeria-grid,
-    .categorias-grid,
-    .mvv-grid{
-        grid-template-columns: 1fr;
+        display:flex;
+        flex-direction:column;
+        gap:15px;
     }
 
     .banner-texto h2,
     .hero-conteudo h2{
-        font-size: 32px;
+
+        font-size:34px;
+    }
+
+    .banner-texto p,
+    .hero-conteudo p{
+
+        font-size:16px;
+    }
+
+    .cards,
+    .grid-produtos,
+    .beneficios-grid,
+    .galeria-grid,
+    .categorias-grid,
+    .mvv-grid{
+
+        grid-template-columns:1fr;
+    }
+
+    .produto img{
+
+        height:250px;
+    }
+
+    .categorias-grid article,
+    .produto,
+    .card{
+
+        max-width:380px;
+        margin:auto;
+    }
+
+    .formulario-grid{
+
+        display:flex;
+        flex-direction:column;
+    }
+
+    .radio{
+
+        flex-direction:column;
+        align-items:flex-start;
     }
 
     section{
-        padding: 50px 0;
+
+        padding:60px 0;
     }
+
+}
+
+
+/* ===========================
+   CELULARES PEQUENOS
+=========================== */
+
+@media(max-width:480px){
+
+    .banner-texto h2,
+    .hero-conteudo h2{
+
+        font-size:28px;
+    }
+
+    h2{
+
+        font-size:28px;
+    }
+
+    .btn,
+    .btn-card{
+
+        width:100%;
+        text-align:center;
+    }
+
+    footer{
+
+        text-align:center;
+    }
+
 }
