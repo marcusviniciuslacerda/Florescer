@@ -1,162 +1,134 @@
-/* ===========================
+/* ==========================================
    TABLETS
-=========================== */
+========================================== */
 
-@media (max-width: 992px){
+@media (min-width: 769px) and (max-width: 992px){
+
+    .container{
+        width: 92%;
+    }
+
+    .hero-conteudo,
+    .banner-conteudo,
+    .sobre-conteudo,
+    .formulario-grid{
+        gap: 30px;
+    }
+
+    .grid-produtos,
+    .categorias-grid,
+    .mvv-grid,
+    .cards,
+    .beneficios-grid,
+    .galeria-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/* ==========================================
+   CELULARES
+========================================== */
+
+@media (max-width: 768px){
 
     .container{
         width: 90%;
     }
 
-    .banner-conteudo,
-    .hero-conteudo,
-    .sobre-conteudo,
-    .formulario-grid{
-
-        display:flex;
-        flex-direction:column;
-        text-align:center;
+    header .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .banner-texto,
-    .banner-imagem,
+    .logo{
+        margin-bottom: 15px;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .hero-conteudo,
+    .banner-conteudo,
+    .sobre-conteudo,
+    .formulario-grid{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
     .hero-conteudo div,
     .hero-conteudo img,
+    .banner-texto,
+    .banner-imagem,
     .sobre-texto,
     .sobre-imagem{
-
-        width:100%;
+        width: 100%;
     }
 
     .hero-conteudo img,
     .banner-imagem img,
     .sobre-imagem img{
-
-        max-width:450px;
-        margin:auto;
-        display:block;
+        max-width: 300px;
+        margin: 20px auto 0;
+        display: block;
     }
 
-    .cards,
     .grid-produtos,
-    .beneficios-grid,
-    .galeria-grid,
     .categorias-grid,
-    .mvv-grid{
-
-        grid-template-columns:repeat(2,1fr);
-    }
-
-}
-
-
-/* ===========================
-   CELULAR
-=========================== */
-
-@media(max-width:768px){
-
-    header .container{
-
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-    }
-
-    .logo{
-
-        margin-bottom:20px;
-    }
-
-    nav ul{
-
-        display:flex;
-        flex-direction:column;
-        gap:15px;
-    }
-
-    .banner-texto h2,
-    .hero-conteudo h2{
-
-        font-size:34px;
-    }
-
-    .banner-texto p,
-    .hero-conteudo p{
-
-        font-size:16px;
-    }
-
+    .mvv-grid,
     .cards,
-    .grid-produtos,
     .beneficios-grid,
-    .galeria-grid,
-    .categorias-grid,
-    .mvv-grid{
+    .galeria-grid{
+        grid-template-columns: 1fr;
+    }
 
-        grid-template-columns:1fr;
+    .produto{
+        max-width: 350px;
+        margin: 0 auto;
     }
 
     .produto img{
-
-        height:250px;
-    }
-
-    .categorias-grid article,
-    .produto,
-    .card{
-
-        max-width:380px;
-        margin:auto;
+        height: 220px;
     }
 
     .formulario-grid{
-
-        display:flex;
-        flex-direction:column;
+        display: flex;
+        flex-direction: column;
     }
 
     .radio{
-
-        flex-direction:column;
-        align-items:flex-start;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
     }
 
-    section{
-
-        padding:60px 0;
-    }
-
-}
-
-
-/* ===========================
-   CELULARES PEQUENOS
-=========================== */
-
-@media(max-width:480px){
-
-    .banner-texto h2,
-    .hero-conteudo h2{
-
-        font-size:28px;
+    h1{
+        font-size: 28px;
     }
 
     h2{
-
-        font-size:28px;
+        font-size: 30px;
     }
 
     .btn,
     .btn-card{
+        width: 100%;
+        text-align: center;
+    }
 
-        width:100%;
-        text-align:center;
+    section{
+        padding: 50px 0;
     }
 
     footer{
-
-        text-align:center;
+        text-align: center;
     }
 
 }
